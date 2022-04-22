@@ -1,9 +1,11 @@
-
+import Mycontent from "./components/Mycontent";
+import Mynav from "./components/Mynav";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-center">Prj 01</h1>
+      <Mynav></Mynav>
+      <Mycontent></Mycontent>
     </div>
   );
 }
