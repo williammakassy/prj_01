@@ -1,12 +1,17 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Mycontent from "./components/Mycontent";
 import Mynav from "./components/Mynav";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Mynav></Mynav>
-      <Mycontent></Mycontent>
-    </div>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Mycontent/>}></Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 

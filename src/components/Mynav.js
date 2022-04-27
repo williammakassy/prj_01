@@ -1,10 +1,9 @@
 
-
 const Mynav = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
               <a className="navbar-brand" href="#">CoDe VENTORY</a>
               <button 
@@ -18,6 +17,9 @@ const Mynav = () => {
               </button>
               <div className="collapse navbar-collapse" id="ventoNavbar">
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li className="nav-item">
+                        <a href="/profile" className="nav-link">PROFILE</a>
+                      </li>
                       <li className="nav-item dropdown">
                           <a href="#" 
                             className="nav-link dropdown-toggle"
@@ -25,12 +27,12 @@ const Mynav = () => {
                                 MENU
                             </a>
                             <div className="dropdown-menu dropdown-menu-end">
-                                <a href="#" className="dropdown-item">POS</a>
-                                <a href="#" className="dropdown-item">SALE</a>
-                                <a href="#" className="dropdown-item">RECEIVABLE</a>
-                                <a href="#" className="dropdown-item">PURCHASE</a>
-                                <a href="#" className="dropdown-item">EXPENSE</a>
-                                <a href="#" className="dropdown-item">USER</a>
+                                <a href="/pos" className="dropdown-item">POS</a>
+                                <a href="/sale" className="dropdown-item">SALE</a>
+                                <a href="/receivable" className="dropdown-item">RECEIVABLE</a>
+                                <a href="/purchase" className="dropdown-item">PURCHASE</a>
+                                <a href="/expense" className="dropdown-item">EXPENSE</a>
+                                <a href="/user" className="dropdown-item">USER</a>
                             </div>
                       </li>
                   </ul>
