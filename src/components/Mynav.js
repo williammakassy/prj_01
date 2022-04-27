@@ -27,9 +27,15 @@ const Mynav = () => {
                                 MENU
                             </a>
                             <div className="dropdown-menu dropdown-menu-end">
-                                <a href="/pos" className="dropdown-item">POS</a>
-                                <a href="/sale" className="dropdown-item">SALE</a>
-                                <a href="/receivable" className="dropdown-item">RECEIVABLE</a>
+                                <a href="/pos" className="dropdown-item" style={{fontSize: '20px'}}>
+                                  <i className='fas fa-bullseye' style={{fontSize: '18px'}}></i>&nbsp;POS
+                                </a>
+                                <a href="/sale" className="dropdown-item" style={{ fontSize: '20px' }}>
+                                <i className='fas fa-pound-sign' style={{fontSize: '18px'}}></i>
+                                  &nbsp;SALE</a>
+                                <a href="/receivable" className="dropdown-item" style={{fontSize: '20px'}}>
+                                  <i className='fas fa-hand-holding-usd' style={{fontSize: '18px'}}></i>&nbsp;RECEIVABLE
+                                </a>
                                 <a href="/purchase" className="dropdown-item">PURCHASE</a>
                                 <a href="/expense" className="dropdown-item">EXPENSE</a>
                                 <a href="/user" className="dropdown-item">USER</a>
